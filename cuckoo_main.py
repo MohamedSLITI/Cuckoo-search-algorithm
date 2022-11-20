@@ -24,9 +24,6 @@ class ProblemBase(ABC):
         pass
 
     def replay(self) -> None:
-        """
-        Start the problems visualization.
-        """
         self._visualizer.replay()
 
 

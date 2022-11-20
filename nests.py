@@ -17,12 +17,6 @@ class Nest(Coordinate):
         self._initialize()
 
     def update_pos(self, new_position: Tuple[float, float]) -> None:
-        """
-        If the new position's value is better than the old one, update the nests position and value.
-
-        Arguments:
-            new_position {Tuple[float, float]} -- The new position
-        """
 
         new_value = self._function(new_position)
         if new_value < self.value:
